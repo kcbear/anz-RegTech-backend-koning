@@ -83,7 +83,7 @@ public class TransactionRepositoryTests {
             Assert.assertEquals(accountName, txn.getAccount().getName());
         }
 
-        Assert.assertEquals(true, actual.get(0).getValueDate().isAfter(actual.get(1).getValueDate()));
+        Assert.assertTrue(actual.get(0).getValueDate().isAfter(actual.get(1).getValueDate()));
     }
 
     @Test
